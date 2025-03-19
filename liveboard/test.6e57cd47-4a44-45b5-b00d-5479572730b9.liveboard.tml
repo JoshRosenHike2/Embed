@@ -1,0 +1,113 @@
+guid: 6e57cd47-4a44-45b5-b00d-5479572730b9
+liveboard:
+  name: test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total sales by city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[city] [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c2244e82-4676-4213-9c7e-788016f3616b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"36b3fc59-6a5c-4dbf-9639-640fce1fb1fe\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: cb86823e-da33-4cd3-bb0d-8b2960f6430e
+  - id: Viz_2
+    answer:
+      name: Total sales by region1234568
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [region] [city] [item type] [latitude] [longitude]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      - name: item type
+      - name: latitude
+      - name: longitude
+      - name: region
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        - column_id: latitude
+          show_headline: false
+        - column_id: longitude
+          show_headline: false
+        - column_id: region
+          show_headline: false
+        ordered_column_ids:
+        - region
+        - city
+        - item type
+        - latitude
+        - longitude
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        - column_id: item type
+        - column_id: latitude
+        - column_id: longitude
+        - column_id: region
+        axis_configs:
+        - x:
+          - latitude
+          - longitude
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6dfe5030-42fb-468b-b3fe-287213c9c2c8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"74b1338f-145c-42fb-a85e-2a4e79a6d2a8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a8cbbbef-dd10-485c-a35c-40ef5a50b024
+  layout:
+    tabs:
+    - name: Tab 1
+      description: ""
+      tiles:
+      - visualization_id: Viz_2
+      id: 9a4ee769-99b0-497a-8670-3e0cebe97476
+    - name: Tab 2
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: dbe444ff-3ebb-474f-bb2e-799e90dcf32a
