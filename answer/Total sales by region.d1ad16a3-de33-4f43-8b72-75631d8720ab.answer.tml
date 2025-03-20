@@ -1,0 +1,35 @@
+guid: d1ad16a3-de33-4f43-8b72-75631d8720ab
+answer:
+  name: Total sales by region
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+  search_query: "[sales] by [region]"
+  answer_columns:
+  - name: Total sales
+  - name: region
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: region
+      show_headline: false
+    ordered_column_ids:
+    - region
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Total sales
+    - column_id: region
+    axis_configs:
+    - x:
+      - region
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"69a184d1-2e3a-4f73-8061-e60bdc4a954d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"7bb0fc40-fccf-439a-bc8e-ba06dc0ce48c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#FF8142\"}]}"
+  display_mode: CHART_MODE
